@@ -14,6 +14,9 @@
     "web",
     "player"
   ],
+  "dependencies": {
+    "react": "^0.14.0"
+  },
   "author": "Oh Ya Games",
   "license": "MIT",
   "bugs": {
