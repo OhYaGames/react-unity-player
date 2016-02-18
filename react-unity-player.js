@@ -3,8 +3,8 @@ import React, {Component, PropTypes} from 'react';
 export default class UnityPlayer extends Component {
   static propTypes = {
     params: PropTypes.object,
-    width: PropTypes.string.isRequired,
-    height: PropTypes.string.isRequired,
+    width: PropTypes.number.isRequired,
+    height: PropTypes.number.isRequired,
     src: PropTypes.string.isRequired
   }
 
