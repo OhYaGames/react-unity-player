@@ -1,0 +1,23 @@
+{
+  "name": "react-unity-player",
+  "version": "1.0.0",
+  "description": "React component for Unity 3d Web player.",
+  "main": "react-unity-player.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OhYaGames/react-unity-player.git"
+  },
+  "keywords": [
+    "react",
+    "unity",
+    "web",
+    "player"
+  ],
+  "author": "Oh Ya Games",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/OhYaGames/react-unity-player/issues"
+  },
+  "homepage": "https://github.com/OhYaGames/react-unity-player#readme"
+}
