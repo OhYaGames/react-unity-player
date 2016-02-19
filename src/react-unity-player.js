@@ -1,13 +1,6 @@
 import React, {Component, PropTypes} from 'react';
 
 export default class UnityPlayer extends Component {
-  static propTypes = {
-    params: PropTypes.object,
-    width: PropTypes.number.isRequired,
-    height: PropTypes.number.isRequired,
-    src: PropTypes.string.isRequired
-  }
-
   componentDidMount() {
     const config = {
       width: this.props.width,
@@ -92,7 +85,7 @@ export default class UnityPlayer extends Component {
   }
 
   render() {
-    return (<div ref="safe">
+    return <div ref="safe">
       <div id="unityPlayer">
         <div className="missing" style={{display: 'none'}}>
           <a href="http://unity3d.com/webplayer/" title="Unity Web Player. Install now!">
@@ -118,6 +111,13 @@ export default class UnityPlayer extends Component {
       <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
       <script type="text/javascript" src="https://ssl-webplayer.unity3d.com/download_webplayer-3.x/3.0/uo/UnityObject2.js"></script>
       <script type="text/javascript" id="unityCode"></script>
-    </div>);
+    </div>;
   }
+}
+
+UnityPlayer.propTypes = {
+  params: PropTypes.object,
+  width: PropTypes.number.isRequired,
+  height: PropTypes.number.isRequired,
+  src: PropTypes.string.isRequired
 }
